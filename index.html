@@ -142,19 +142,20 @@
     pointer-events: all;
   }
   .field-wrap input {
-    width: 100%;
-    border: none;
-    border-bottom: 2px dashed rgba(80,80,200,0.35);
-    background: transparent;
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
-    color: #1a1a8a;
-    outline: none;
-    padding: 1px 2px;
-    text-align: center;
-    display: block;
-  }
-  .field-wrap input::placeholder { color: rgba(100,100,180,0.4); }
-  .field-wrap input:focus { border-bottom-color: rgba(80,80,200,0.7); background: rgba(255,255,255,0.45); border-radius: 3px; }
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  color: #1a1a8a;
+  outline: none;
+  padding: 1px 2px;
+  text-align: center;
+  display: block;
+}
+
+.field-wrap input::placeholder {
+  color: transparent;
+}
 
   #toast {
     position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
