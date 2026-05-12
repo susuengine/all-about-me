@@ -437,8 +437,11 @@ function floodFill(startX, startY, fillColor) {
 }
 
 // ─── TEXT FIELDS ───
-const FIELDS = [('name', 'your name', 8.5, 10.2, 21, 14, 'center', false), ('hair', '____', 41, 14.8, 16, 13, 'center', false), ('book', 'book title', 5, 31.5, 26, 12, 'center', false), ('tv', 'show title', 62, 31.5, 30, 12, 'center', false), ('sport', 'sport', 5, 49.5, 26, 12, 'center', false), ('job', 'dream job', 34, 55, 24, 11, 'center', false), ('food', 'yummy food', 60, 49.5, 32, 12, 'center', false), ('family', 'describe your family', 4, 75.5, 28, 11, 'center', false), ('color', 'favorite color', 27, 80.5, 20, 12, 'center', false), ('age', '?', 44.5, 93.0, 7, 14, 'center', false), ('live', 'city / neighborhood', 70, 80.5, 24, 12, 'center', false)];
-const textLayer = document.getElementById('text-layer');
+const FIELDS = [
+  ['name', 'your name', 8.5, 10.2, 21, 14, 'center', false],
+  ['hair', '____', 41, 14.8, 16, 13, 'center', false],
+  // ... etc
+];const textLayer = document.getElementById('text-layer');
 
 function positionFields() {
   const rect = bgImg.getBoundingClientRect();
